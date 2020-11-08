@@ -9,16 +9,18 @@
 <body>
   <!-- Include Title, Exit Btn, And so on -->
   <div class="header-container">
-    <!-- TODO -->
-  </div>
-
-  <div class="input-container">
-    <input type="file" class="file-input">
+    <div class="title-container">
+      <p class="title-text">TinyXL Player</p>
+      <span class="btn select-btn">Select</span>
+    </div>
+    <span class="btn close-btn">Close</span>
   </div>
 
   <div class="video-container">
     <video class="video" controls></video>
   </div>
+
+  <input type="file" class="video-input" accept="video/*" style="display: none;">
 
   <script src="./src/index.js"></script>
 </body>
