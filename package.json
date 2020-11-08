@@ -1,0 +1,14 @@
+{
+  "name": "xl-player",
+  "version": "0.1.0",
+  "description": "A video player with Electron.",
+  "main": "main.js",
+  "author": "Leonardo <imrealleonardo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^10.1.5"
+  }
+}
