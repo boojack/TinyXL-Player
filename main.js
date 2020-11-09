@@ -1,13 +1,16 @@
 /**
  * The entry js file
  */
+const {
+  app,
+  BrowserWindow
+} = require('electron')
 
-const { app, BrowserWindow } = require('electron')
-
-function createWindow () {
+function createWindow() {
   const win = new BrowserWindow({
     width: 700,
     height: 400,
+    icon: __dirname + '/res/player.png',
     // Window No Frame
     frame: false,
     webPreferences: {
@@ -17,7 +20,8 @@ function createWindow () {
   })
 
   win.loadFile('index.html')
-  win.webContents.openDevTools()
+  // Whether open the devtools
+  // win.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)

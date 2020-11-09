@@ -1,46 +1,36 @@
-
 window.onload = () => {
   console.info('App start')
 
   const selectBtn = document.querySelector('.btn.select-btn')
   const closeBtn = document.querySelector('.btn.close-btn')
+
+  const player = document.querySelector('video.player')
   const inputEl = document.querySelector('input.video-input')
 
-  const video = document.querySelector('video.video')
+  /**
+   * Some big file can not read
+   * - NotReadableError(fixed)
+   * - Some file type not accepted
+   */
+  inputEl.onchange = () => {
+    const file = inputEl.files[0]
 
-  selectBtn.addEventListener('click', ()=>{
-    inputEl.click()
-  
-    /**
-     * Some big file can not read: NotReadableError
-     */
-    inputEl.onchange = ()=>{
-      const file = inputEl.files[0]
-      if (!file || !/^video/.test(file.type)) {
-        alert('Wrong file')
-        return
-      }
-      
-      const fileReader = new FileReader()
-
-      fileReader.readAsArrayBuffer(file)
-      fileReader.onload = ()=>{
-        const blob = new Blob([fileReader.result], {
-          type: file.type
-        })
-        const url = URL.createObjectURL(blob)
-  
-        video.preload = 'metadata'
-        video.src = url
-        video.play()
-      }
-      fileReader.onerror = (e)=>{
-        console.error(e)
-      }
+    if (!file) {
+      return
     }
+
+    player.preload = 'metadata'
+    player.src = URL.createObjectURL(file)
+    player.load()
+    player.play()
+  }
+
+  selectBtn.addEventListener('click', () => {
+    inputEl.click()
   })
 
-  closeBtn.addEventListener('click', ()=>{
+  // Close window
+  closeBtn.addEventListener('click', () => {
     const remote = require('electron').remote
     const currentWindow = remote.getCurrentWindow()
 

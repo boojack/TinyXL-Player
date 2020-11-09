@@ -2,7 +2,7 @@
 
 ## What is it
 
-There is some stiky in the SPlayer, so here we go.
+There are lots of unhappy usage in the SPlayer, so here we go to make a Video Player.
 
 This is an absolutly TINY Video Player which just made during 1 hour!
 
@@ -15,8 +15,8 @@ TODO~
 ## Roadmap
 
 - [x] Choose video and Play it!
-- [ ] Drag and Play
-- [ ] Beautiful~
-- [ ] Logical!
+- [ ] Beautiful && Logical!
+- [ ] Customize video controls
+- [ ] Support more video formats~
 
 ### 2020/11/8-
