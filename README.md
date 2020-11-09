@@ -8,14 +8,23 @@ This is an absolutly TINY Video Player which just made during 1 hour!
 
 ## How to use it
 
-Wait for some free time to build the package.
+1. Download this project source code;
+2. Run these command:
 
-TODO~
+``` bash
+yarn install
+# For tester
+npm start
+# For user
+npm run package
+# or
+npm run make
+```
 
 ## Roadmap
 
 - [x] Choose video and Play it!
-- [ ] Beautiful && Logical!
+- [x] Beautiful && Logical!
 - [ ] Customize video controls
 - [ ] Support more video formats~
 
