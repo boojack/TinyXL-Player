@@ -44,4 +44,9 @@ window.onload = () => {
 
     currentWindow.close()
   })
+
+  // NOTE: Dynamic height adjustment
+  window.onresize = ()=>{
+    player.style.height = document.body.offsetHeight - 50 + 'px'
+  }
 }
