@@ -55,6 +55,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .header-container>.title-container>.title-text {
@@ -62,6 +63,15 @@ body {
   margin-right: 10px;
   cursor: pointer;
   -webkit-app-region: drag;
+}
+
+.header-container>.vname-text{
+  font-size: 14px;
+  padding: 0 20px;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .video-container {
@@ -78,5 +88,5 @@ body {
   flex-grow: 1;
   width: 100%;
   max-width: 100%;
-  max-height: 350px;
+  height: auto;
 }

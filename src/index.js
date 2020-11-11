@@ -6,23 +6,31 @@ window.onload = () => {
 
   const player = document.querySelector('video.player')
   const inputEl = document.querySelector('input.video-input')
+  const vnameText = document.querySelector('.vname-text')
 
   /**
-   * Some big file can not read
    * - NotReadableError(fixed)
-   * - Some file type not accepted
+   * - Some file type not accepted(HTML input accept problem)
    */
   inputEl.onchange = () => {
-    const file = inputEl.files[0]
+    try {
+      const file = inputEl.files[0]
 
-    if (!file) {
-      return
+      if (!file || !file.type.includes('video/')) {
+        return
+      }
+
+      vnameText.innerText = file.name
+
+      player.preload = 'metadata'
+      player.src = URL.createObjectURL(file)
+      player.load()
+      player.play()
+    } catch (error) {
+      vnameText.innerText = ''
+      console.error(error)
+      alert('Select a VIDEO file PLZ')
     }
-
-    player.preload = 'metadata'
-    player.src = URL.createObjectURL(file)
-    player.load()
-    player.play()
   }
 
   selectBtn.addEventListener('click', () => {

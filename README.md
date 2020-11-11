@@ -25,7 +25,7 @@ npm run make
 
 - [x] Choose video and Play it!
 - [x] Beautiful && Logical!
-- [ ] Customize video controls
-- [ ] Support more video formats~
+- [x] Support more video formats~
+- [x] Customize video controls
 
 ### 2020/11/8-
