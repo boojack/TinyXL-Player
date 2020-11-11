@@ -8,13 +8,19 @@ This is an absolutly TINY Video Player which just made during 1 hour!
 
 ## How to use it
 
-Find and install the package in /res/xl-player-x.x.x Setup.exe
+~~Find and install the package in **/out/make/xxx/xl-player-x.x.x Setup.exe**~~
 
 ## Roadmap
 
 - [x] Choose video and Play it!
 - [x] Beautiful && Logical!
-- [x] Support more video formats~
-- [x] Customize video controls
+- [ ] Support more video formats~
+- [ ] Customize video controls
 
 ### 2020/11/8-11/11
+
+![image](https://realleonardo.github.io/TinyXL-Player/res/ex1.png)
+![image](https://realleonardo.github.io/TinyXL-Player/res/ex2.png)
+
+If you are interested in this:
+[Email to me](imrealleonardo@gmail.com)
