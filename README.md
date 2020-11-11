@@ -8,18 +8,7 @@ This is an absolutly TINY Video Player which just made during 1 hour!
 
 ## How to use it
 
-1. Download this project source code;
-2. Run these command:
-
-``` bash
-yarn install
-# For tester
-npm start
-# For user
-npm run package
-# or
-npm run make
-```
+Find and install the package in /res/xl-player-x.x.x Setup.exe
 
 ## Roadmap
 
@@ -28,4 +17,4 @@ npm run make
 - [x] Support more video formats~
 - [x] Customize video controls
 
-### 2020/11/8-
+### 2020/11/8-11/11
