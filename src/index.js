@@ -47,6 +47,6 @@ window.addEventListener('load', ()=>{
 
   // NOTE: Dynamic height adjustment
   window.onresize = ()=>{
-    player.style.height = document.body.offsetHeight - 50 + 'px'
+    player.style.height = document.body.offsetHeight - 30 + 'px'
   }
 })

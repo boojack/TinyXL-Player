@@ -8,11 +8,12 @@ const {
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 700,
-    height: 400,
+    width: 900,
+    height: 600,
     icon: __dirname + '/res/player.png',
     // Window No Frame
     frame: false,
+    transparent: true, 
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true
