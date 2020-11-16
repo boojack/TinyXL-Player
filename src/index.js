@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', ()=>{
   console.info('App start')
 
   const selectBtn = document.querySelector('.btn.select-btn')
@@ -49,4 +49,4 @@ window.onload = () => {
   window.onresize = ()=>{
     player.style.height = document.body.offsetHeight - 50 + 'px'
   }
-}
+})

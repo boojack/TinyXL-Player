@@ -2,9 +2,7 @@
 
 ## What is it
 
-There are lots of unhappy usage in the SPlayer, so here we go to make a Video Player.
-
-This is an absolutly TINY Video Player which just made during 1 hour!
+This is a **cross-plants** & **light** & **fast** & **beautify** video player.
 
 ## How to use it
 
@@ -14,13 +12,24 @@ This is an absolutly TINY Video Player which just made during 1 hour!
 
 - [x] Choose video and Play it!
 - [x] Beautiful && Logical!
-- [ ] Support more video formats~
-- [ ] Customize video controls
+- [x] Customize video controls
 
-### 2020/11/8-11/11
+  - "Enter": toggle fullscreen
+  - "Space": toggle player status
+  - "Arrow Left/Right": adjustment the currenttime
+  - "Arrow Up/Down": adjustment the volume
 
+- [ ] Support more video formats
+
+## App Shootcuts
+
+1. index page:
 ![image](https://realleonardo.github.io/TinyXL-Player/res/ex1.png)
+
+2. player:
 ![image](https://realleonardo.github.io/TinyXL-Player/res/ex2.png)
 
+---
+
 If you are interested in this:
-[Email to me](imrealleonardo@gmail.com)
+[Email to me](mailto:imrealleonardo@gmail.com)
