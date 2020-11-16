@@ -6,6 +6,7 @@
  */
 
 window.addEventListener('load', ()=>{
+  const DEFAULT_RATE = 3
   const player = document.querySelector('video.player')
 
   if (!player) {
@@ -39,13 +40,13 @@ window.addEventListener('load', ()=>{
       e.preventDefault()
 
       if (player.currentTime > 0) {
-        player.currentTime--
+        player.currentTime-=DEFAULT_RATE
       }
     } else if (e.key == 'ArrowRight') {
       e.preventDefault()
 
       if (player.currentTime < player.duration) {
-        player.currentTime++
+        player.currentTime+=DEFAULT_RATE
       }
     } else if (e.key == 'ArrowUp') {
       e.preventDefault()

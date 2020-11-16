@@ -6,6 +6,9 @@ const {
   BrowserWindow
 } = require('electron')
 
+// NOTE: display GPU usage
+app.disableHardwareAcceleration()
+
 function createWindow() {
   const win = new BrowserWindow({
     width: 900,
