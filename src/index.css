@@ -75,7 +75,7 @@ body {
   -webkit-app-region: drag;
 }
 
-.header-container>.vname-text{
+.header-container>.vname-text {
   font-size: 14px;
   padding: 0 20px;
   flex-grow: 1;

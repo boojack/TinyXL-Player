@@ -4,20 +4,19 @@
  * - space: 控制播放/暂停
  * - enter: 控制全屏模式
  */
-
-window.addEventListener('load', ()=>{
+window.addEventListener('load', () => {
   const DEFAULT_RATE = 3
   const player = document.querySelector('video.player')
 
-  if (!player) {
-    return
-  }
+  window.addEventListener('keypress', (e) => {
+    if (!player) {
+      player = document.querySelector('video.player')
+    }
 
-  window.addEventListener('keypress', (e)=>{
     // NOTE: play status and fullscreen control
     if (e.key == ' ') {
       e.preventDefault()
-      
+
       if (player.paused) {
         player.play()
       } else {
@@ -35,30 +34,34 @@ window.addEventListener('load', ()=>{
   })
 
   // NOTE: currentTime and volume control
-  window.addEventListener('keydown', (e)=>{
+  window.addEventListener('keydown', (e) => {
+    if (!player) {
+      player = document.querySelector('video.player')
+    }
+
     if (e.key == 'ArrowLeft') {
       e.preventDefault()
 
       if (player.currentTime > 0) {
-        player.currentTime-=DEFAULT_RATE
+        player.currentTime -= DEFAULT_RATE
       }
     } else if (e.key == 'ArrowRight') {
       e.preventDefault()
 
       if (player.currentTime < player.duration) {
-        player.currentTime+=DEFAULT_RATE
+        player.currentTime += DEFAULT_RATE
       }
     } else if (e.key == 'ArrowUp') {
       e.preventDefault()
 
       if (player.volume < 1) {
-        player.volume+=0.1
+        player.volume += 0.1
       }
     } else if (e.key == 'ArrowDown') {
       e.preventDefault()
 
       if (player.volume > 0) {
-        player.volume-=0.1
+        player.volume -= 0.1
       }
     }
   })

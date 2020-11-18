@@ -1,4 +1,4 @@
-window.addEventListener('load', ()=>{
+window.addEventListener('load', () => {
   console.info('App start')
 
   const selectBtn = document.querySelector('.btn.select-btn')
@@ -46,7 +46,7 @@ window.addEventListener('load', ()=>{
   })
 
   // NOTE: Dynamic height adjustment
-  window.onresize = ()=>{
+  window.onresize = () => {
     player.style.height = document.body.offsetHeight - 30 + 'px'
   }
 })

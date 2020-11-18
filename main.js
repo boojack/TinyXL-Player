@@ -16,7 +16,7 @@ function createWindow() {
     icon: __dirname + '/res/player.png',
     // Window No Frame
     frame: false,
-    transparent: true, 
+    transparent: true,
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true
