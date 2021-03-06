@@ -24,10 +24,10 @@ This is a **cross-plants** & **light** & **fast** & **beautify** video player.
 ## App Shootcuts
 
 1. index page:
-![image](https://realleonardo.github.io/TinyXL-Player/res/ex1.png)
+   ![image](https://boojack.github.io/TinyXL-Player/res/ex1.png)
 
 2. player:
-![image](https://realleonardo.github.io/TinyXL-Player/res/ex2.png)
+   ![image](https://boojack.github.io/TinyXL-Player/res/ex2.png)
 
 ---
 
